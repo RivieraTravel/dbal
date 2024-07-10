@@ -25,7 +25,7 @@ trait DbalConsumerHelperTrait
         }
 
         $now = time();
-        $deliveryId = Uuid::uuid4();
+        $deliveryId = Uuid::uuid4()->toString();
 
         $endAt = microtime(true) + 0.2; // add 200ms
 
